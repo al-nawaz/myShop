@@ -21,7 +21,7 @@ export const ProductCard = ({addtoCart,count,cart,removeItem}) => {
     setshowCart(value)
   }
   useEffect(() => {
-    axios.get("https://dummyjson.com/products")
+    fetch("https://dummyjson.com/products")
       .then((res) => res.json())
       .then((x) => setProduct(x.products));
   }, []);
