@@ -11,21 +11,14 @@ import CartList from './CartList';
 const Header = ({count}) => {
   return (
     <>
-      <Navbar bg="primary" variant="dark">
         <Container style={{fontFamily:'Chilanka'}}>
-          <Navbar.Brand href="#home">chorBazaar</Navbar.Brand>
-          <Nav variant="pills"activeKey={'home'} className="me-auto">
-            {/* <Nav.Link href="home">Home</Nav.Link>
-            <Nav.Link href="about">About</Nav.Link>
-            <Nav.Link href="contact">Contact</Nav.Link> */}
+            <span><h2>chorBazaar</h2></span>
             <ul className='myNav'>
               <li><Link to='/home'>Home</Link></li>
               <li><Link to='/about'>About</Link></li>
               <li><Link to='/contact'>Contact</Link></li>
             </ul>
-          </Nav>
         </Container>
-      </Navbar>
       </>
   )
 }
