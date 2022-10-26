@@ -12,6 +12,7 @@ import Image from 'react-bootstrap/Image';
 import { Link } from "react-router-dom";
 import CartList from "./CartList";
 import {FaShoppingCart} from 'react-icons/fa'
+import axios from "axios";
 
 export const ProductCard = ({addtoCart,count,cart,removeItem}) => {
   const [product, setProduct] = useState([]);
@@ -20,7 +21,7 @@ export const ProductCard = ({addtoCart,count,cart,removeItem}) => {
     setshowCart(value)
   }
   useEffect(() => {
-    fetch("https://dummyjson.com/products")
+    axios.get("https://dummyjson.com/products")
       .then((res) => res.json())
       .then((x) => setProduct(x.products));
   }, []);
