@@ -18,10 +18,10 @@ const Header = ({count}) => {
             {/* <Nav.Link href="home">Home</Nav.Link>
             <Nav.Link href="about">About</Nav.Link>
             <Nav.Link href="contact">Contact</Nav.Link> */}
-            <ul>
-              <li><Link to='/'>Home</Link></li>
-              <li><Link to='about'>About</Link></li>
-              <li><Link to='contact'>Contact</Link></li>
+            <ul className='myNav'>
+              <li><Link to='/home'>Home</Link></li>
+              <li><Link to='/about'>About</Link></li>
+              <li><Link to='/contact'>Contact</Link></li>
             </ul>
           </Nav>
         </Container>

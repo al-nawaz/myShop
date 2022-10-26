@@ -13,10 +13,12 @@ ul{
  display: flex;
  justify-content:flex-start;
  flex-wrap: wrap;
+ color: azure;
 }
 li{
     margin-right: 50px;
     list-style-type: none;
+    color: azure;
 }
 .logo{
     max-height: 20px;
