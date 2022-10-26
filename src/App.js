@@ -34,7 +34,7 @@ function App() {
   return (
    <HashRouter basename={process.env.PUBLIC_URL}>
    <Routes>
-    <Route index element={<Signin/>}/>
+    <Route path='/' element={<Signin/>}/>
     <Route path='home' element={<Home />}/>
     <Route path='about'  element={<About/>}/>
     <Route path='contact' element={<Contact/>}/>
