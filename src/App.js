@@ -1,5 +1,5 @@
 import Header from './Header';
-import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import {BrowserRouter,Routes,Route,HashRouter} from 'react-router-dom';
 import Home from './Home'
 import About from './About';
 import Contact from './Contact';
@@ -32,7 +32,7 @@ function App() {
     });
    }, [])
   return (
-   <BrowserRouter basename={process.env.PUBLIC_URL}>
+   <HashRouter basename={process.env.PUBLIC_URL}>
    <Routes>
     <Route index element={<Signin/>}/>
     <Route path='home' element={<Home />}/>
@@ -41,7 +41,7 @@ function App() {
     <Route path='products' element={<ProductCard addtoCart={addtoCart} count={cart.length}  cart={cart}/>}/>
     <Route path='cart' element={<CartList/>}/>
    </Routes>
-   </BrowserRouter>
+   </HashRouter>
   );
 }
 
