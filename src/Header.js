@@ -15,9 +15,14 @@ const Header = ({count}) => {
         <Container style={{fontFamily:'Chilanka'}}>
           <Navbar.Brand href="#home">chorBazaar</Navbar.Brand>
           <Nav variant="pills"activeKey={'home'} className="me-auto">
-            <Nav.Link href="home">Home</Nav.Link>
+            {/* <Nav.Link href="home">Home</Nav.Link>
             <Nav.Link href="about">About</Nav.Link>
-            <Nav.Link href="contact">Contact</Nav.Link>
+            <Nav.Link href="contact">Contact</Nav.Link> */}
+            <ul>
+              <li><Link to='/'>Home</Link></li>
+              <li><Link to='about'>About</Link></li>
+              <li><Link to='contact'>Contact</Link></li>
+            </ul>
           </Nav>
         </Container>
       </Navbar>
