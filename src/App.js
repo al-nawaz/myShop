@@ -32,7 +32,7 @@ function App() {
     });
    }, [])
   return (
-   <HashRouter basename={process.env.PUBLIC_URL}>
+   <HashRouter basename='/'>
    <Routes>
     <Route path='/' element={<Signin/>}/>
     <Route path='home' element={<Home />}/>
