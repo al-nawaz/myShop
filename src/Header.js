@@ -9,16 +9,24 @@ import CartList from './CartList';
 
 
 const Header = ({count}) => {
+
+  const reactLink = {
+    color:'white',
+    marginRight:'20px',
+    textDecoration:'none',
+  }
   return (
     <>
-        <Container style={{fontFamily:'Chilanka'}}>
-            <span><h2>chorBazaar</h2></span>
-            <ul className='myNav'>
-              <li><Link to='/home'>Home</Link></li>
-              <li><Link to='/about'>About</Link></li>
-              <li><Link to='/contact'>Contact</Link></li>
-            </ul>
+      <Navbar bg="primary" variant="light" className='mainNav'>  
+        <Container style={{fontFamily:'Chilanka',color:'white'}}>
+          <Nav className='me-auto'>
+            <Navbar.Brand >myShop</Navbar.Brand>
+            <Link style={reactLink} to="/">Home</Link>
+            <Link style={reactLink} to="/about">About</Link>
+            <Link style={reactLink} to="/contact">Contact</Link>
+          </Nav>
         </Container>
+      </Navbar>
       </>
   )
 }

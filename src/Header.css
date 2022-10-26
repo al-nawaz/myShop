@@ -34,3 +34,16 @@ li{
     align-self: flex-start;
     margin: 20px;
 }
+
+.myNav{
+    display: flex;
+    background-color:red;
+    color:white;
+    width: 500px;
+    justify-content: space-around;
+}
+.mainNav{
+    position:fixed;
+    top:0;
+    width: 100%;
+}

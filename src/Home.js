@@ -27,7 +27,7 @@ const Home = ({count}) => {
     <Header count={count}/>
     {/* <ProductCard/> */}
     </div>
-    <Container style={{marginTop:'5vh'}}>
+    <Container style={{marginTop:'10vh'}}>
       <Row>
         <Col className='myCols' sm={4}><Link className='links' to='/products'>Our Products</Link></Col>
         <Col className='myCols' sm={4}><Link className='links' to='/about'>Our Services</Link></Col>

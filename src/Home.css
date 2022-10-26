@@ -21,20 +21,17 @@
 }
 
 .logo1{
-    font-family:'Chilanka';
-    font-size: 1.5rem;
     text-align: center;
     height: fit-content;
-    max-width:100px;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 img{
     height:8vh !important;   
     min-width:5vw !important;
 }
-.logoContainer{
-    margin-top: 20px;
-}
+/* .logoContainer{
+    border: 2px solid black;
+} */
 
 .myTable{
     margin-top:2vh;
