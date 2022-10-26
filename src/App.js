@@ -35,11 +35,11 @@ function App() {
    <HashRouter basename='/'>
    <Routes>
     <Route path='/' element={<Signin/>}/>
-    <Route path='/home' element={<Home />}/>
-    <Route path='/about'  element={<About/>}/>
-    <Route path='/contact' element={<Contact/>}/>
-    <Route path='/products' element={<ProductCard addtoCart={addtoCart} count={cart.length}  cart={cart}/>}/>
-    <Route path='/cart' element={<CartList/>}/>
+    <Route path='home' element={<Home />}/>
+    <Route path='about'  element={<About/>}/>
+    <Route path='contact' element={<Contact/>}/>
+    <Route path='products' element={<ProductCard addtoCart={addtoCart} count={cart.length}  cart={cart}/>}/>
+    <Route path='cart' element={<CartList/>}/>
    </Routes>
    </HashRouter>
   );
