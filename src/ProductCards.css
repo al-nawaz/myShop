@@ -1,0 +1,40 @@
+.cards{
+    display: flex;
+    flex-direction:column;
+    border:2px solid cyan;
+    border-radius: 30px;
+    height:fit-content;
+    max-width:fit-content;
+    padding: 2rem;
+    margin-bottom:3vw;
+    background-color: burlywood;
+    margin-right: 6px;
+}
+.pic{
+    height: 10rem !important ;
+    width:10rem !important;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.body{
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem;
+    /* margin-top: vh; */
+}
+.cols{
+    background-color:white;
+    border:2px solid green;
+    margin: 2px;
+}
+.myHead{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Chilanka';
+    justify-content: space-around;
+}

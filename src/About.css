@@ -1,0 +1,12 @@
+.about{
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 2px solid lightskyblue;
+    background-color: bisque;
+    font-family: 'Chilanka' !important;
+}
+.myimg{
+    height: 50vh !important;
+    max-width: 30vw !important;
+}

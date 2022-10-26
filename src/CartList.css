@@ -1,0 +1,13 @@
+.cart-items{
+    padding:2px;
+    margin: 20px;
+}
+.separator{
+    border-bottom:2px solid white;
+    margin-top: 5px;
+}
+.cart-actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
