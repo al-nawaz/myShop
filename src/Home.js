@@ -13,14 +13,23 @@ import Myinfo from './Myinfo';
 import Footer from './Footer';
 import Card1 from './Card1';
 import CartList from './CartList';
+import { useNavigate } from 'react-router-dom';
+
 
 
 const Home = ({count}) => {
-  const [token,setToken] = useState('')
+  const [token,setToken] = useState('');
+  const navigate = useNavigate();
+  const authToken = () =>{
+    if(!localStorage.getItem('token')){
+      navigate('/')
+    }
+  }
   useEffect(()=>{
     const userToken = localStorage.getItem('TOKEN')
     setToken(userToken)
-  })
+    authToken()
+  },[])
   return (
     <>
     <div className="productSection">

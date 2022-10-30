@@ -25,8 +25,8 @@ const Signin = () =>{
         })
         .then(result=>{
             if(result.status === 200){
-                navigate('/home')
                 localStorage.setItem('TOKEN',result.data.token)
+                navigate('/home')
             }
         })
         .catch(err=>{
